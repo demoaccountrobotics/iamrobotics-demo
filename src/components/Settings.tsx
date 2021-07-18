@@ -1,14 +1,14 @@
-import './Settings.scss';
+import Toggle from './Toggle';
 import { RobotDetail } from './App';
+import './Settings.scss';
 
 const Settings = ({ robotStatusList }:any) => {
   const renderedList = () => {
-    //TODO : Break out into a seperate component.
-    return robotStatusList.map((robotStatus:RobotDetail) =>{
-      return <div>{robotStatus.id}</div>
-    })
+    return robotStatusList.map((robotStatus:RobotDetail) => 
+      <Toggle name={robotStatus.name} status={robotStatus.status} />
+    )
   }
-
+  
   return ( 
     <div className="settings">{renderedList()}</div>
   );
