@@ -1,4 +1,10 @@
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import Header from './components/Header';
 
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(
+  <main>
+    <Header />
+    <App />
+  </main>,document.getElementById('root')
+);
