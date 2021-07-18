@@ -1,9 +1,16 @@
 import './Settings.scss';
+import { RobotDetail } from './App';
 
-const Settings = () => {
-  // TODO: manage each robot on the stage status
-  return (
-    <div className="settings">settings</div>
+const Settings = ({ robotStatusList }:any) => {
+  const renderedList = () => {
+    //TODO : Break out into a seperate component.
+    return robotStatusList.map((robotStatus:RobotDetail) =>{
+      return <div>{robotStatus.id}</div>
+    })
+  }
+
+  return ( 
+    <div className="settings">{renderedList()}</div>
   );
 };
 
