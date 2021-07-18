@@ -1,7 +1,9 @@
+import './Settings.scss';
+
 const Settings = () => {
   // TODO: manage each robot on the stage status
   return (
-    <div>settings</div>
+    <div className="settings">settings</div>
   );
 };
 
