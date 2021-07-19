@@ -30,13 +30,11 @@ const App = () => {
     }
     fetchData()
   },[])
-
-  // TODO: Create state and pass props to each component
   
   return (
     <div className="app">
       <Settings robotStatusList={robotStatusList}/>
-      <StageView />
+      <StageView robotStatusList={robotStatusList}/>
     </div>
   );
 };

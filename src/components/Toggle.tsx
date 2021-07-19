@@ -21,7 +21,7 @@ const Toggle = (props:ToggleDetails) => {
           <p>
             <strong>{props.name.toUpperCase()}</strong>
             <br/>
-            <strong>status:</strong>{props.status.operation? 'available' : 'code 1'}
+            <strong>status:</strong>{props.status.operation? 'available' : 'low battery'}
           </p>
         </div>
       </div>
